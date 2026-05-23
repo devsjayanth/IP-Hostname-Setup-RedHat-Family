@@ -1,9 +1,5 @@
 # 🐧Linux Network Manager Quick Guide
 Here is the ultimate, comprehensive Standard Operating Procedure (SOP). I have significantly expanded the **"Unmanaged State"** section, as this is the #1 reason `nmcli` fails on minimal, cloud, or freshly installed servers.
-
----
-
-# 📄 The Ultimate Guide to Static IP Configuration with `nmcli`
 **Supported Distros:** Debian, Ubuntu, RHEL, CentOS, Rocky, Alma, Fedora.
 
 ⚠️ **Pre-Flight Warning (SSH Users):** Applying network changes over SSH can drop your session if there is a typo. Have console/KVM access available, or keep a backup DHCP plan ready (see Troubleshooting).
