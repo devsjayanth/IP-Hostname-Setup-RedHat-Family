@@ -27,7 +27,12 @@ sudo systemctl disable --now networking 2>/dev/null  # Debian's ifupdown service
 ```bash
 sudo systemctl enable --now NetworkManager
 ```
+Identify your physical interface and check for existing profiles.
 
+```bash
+nmcli device status
+nmcli connection show
+```
 ---
 
 ## Phase 2: Fix "Unmanaged" State & Force Auto-Boot
