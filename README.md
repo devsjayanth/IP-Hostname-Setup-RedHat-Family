@@ -36,14 +36,6 @@ sudo systemctl enable --now NetworkManager
 nmcli device status
 nmcli connection show
 ```
-*(Note the `DEVICE` name, e.g., `eth0`, `ens192`, and the `NAME` column for existing connections.)*
-
-## Edit the Existing Network settings
-
-### 🔍 Step 1: Find your existing connection name
-```bash
-nmcli connection show
-```
 Look at the `NAME` column. It might be something like `Wired connection 1`, `System eth0`, `ens33`, or `eth0`.  
 *(Note: `nmcli` edits the **connection profile**, not the raw interface. The profile is already linked to your NIC.)*
 
