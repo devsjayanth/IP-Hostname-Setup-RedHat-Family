@@ -129,6 +129,12 @@ nmcli -g connection.autoconnect connection show "ens33"
 ```
 *(It must output `yes`. If it says `no`, run: `nmcli con mod "ens33" connection.autoconnect yes`)*
 
+**4. Disable conflicting legacy network services:**
+```bash
+sudo systemctl disable --now systemd-networkd 2>/dev/null
+sudo systemctl disable --now networking 2>/dev/null  # Debian's ifupdown service
+```
+
 ---
 
 ## 📋 Appendix A: Quick Edit Cheat Sheet
